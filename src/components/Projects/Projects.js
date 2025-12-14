@@ -25,10 +25,10 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Data Warehousing"
+              description="This project focuses on designing and implementing a complete Data Warehousing and Business Intelligence solution. It involves selecting a novel OLTP dataset, developing a dimensional data warehouse schema, performing ETL processes using SQL Server Integration Services (SSIS), and generating BI insights through analytical queries and visualizations. The project demonstrates the ability to transform raw transactional data into meaningful business insights through structured data modeling, efficient ETL workflows, and reporting."
+              ghLink="https://github.com/IT22267122/Data-Warehouse"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
