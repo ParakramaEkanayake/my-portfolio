@@ -3,10 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/kone.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import todo from "../../Assets/Projects/doit.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/DWBI.gif";
-import suicide from "../../Assets/Projects/suicide.png";
+import crystal from "../../Assets/Projects/cryctal.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
@@ -48,7 +48,7 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="End-to-End Text Summarization and Analysis System"
-              description="Implemented a web app for summarize large corpus of text using t5-large model, and used sentiment analysis, keyword extraction, topic modeling for large text"
+              description="Implemented a web app for summarize large corpus of text using t5-large model, and used sentiment analysis, keyword extraction, topic modeling for large text. The web app is built using Streamlit framework and deployed on Streamlit cloud."
               ghLink="https://github.com/IT22267122/Text-Summarizer"
               // demoLink="https://editor.soumya-jit.tech/"              
             />
@@ -67,23 +67,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={crystal}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Crystal - Online Dry Cleaning and Laundry Services System"
+              description="Created a web-based user-friendly application by using create, read, update, delete operations. Using HTML,CSS,PHP,MS SQL."
+              ghLink="https://github.com/IT22267122/Laundry-management-system"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={todo}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="To-Do Mobile Application"
+              description="The android mobile application “To-Do” allows users to add, update, delete and search tasks, and also 
+store tasks in the database . The app has a user-friendly interface and provides an efficient way to manage daily tasks."
+              ghLink="https://github.com/IT22267122/ToDo-App"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>

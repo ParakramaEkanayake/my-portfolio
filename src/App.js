@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import Experience from "./components/Experience/Experience";
 import {
   BrowserRouter as Router,
   Route,
@@ -33,14 +34,17 @@ function App() {
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
-        <ScrollToTop />
-        <Routes>
+        <div className="content">
+          <ScrollToTop />
+          <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>

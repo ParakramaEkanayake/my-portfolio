@@ -12,6 +12,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineCrown, 
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -94,11 +95,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <AiOutlineCrown style={{ marginBottom: "2px" }} /> Experience
               </Nav.Link>
             </Nav.Item>
 

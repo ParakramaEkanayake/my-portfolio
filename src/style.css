@@ -399,6 +399,25 @@ button:focus {
   padding-left: 15px;
 }
 
+/* Layout helpers to keep footer at bottom */
+html, body, #root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto; /* grow to fill available space */
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
 .icon-colour {
   color: #700c86 !important;
 }
